@@ -14,4 +14,7 @@
     <string name="bulb">천정등</string>
     <string name="togglebutton">ToggleButton</string>
     <string name="btnLovelyPet">애완동물 사진보기 앱(p189)</string>
+    <string name="rotate">회전하기</string>
+    <string name="rotateImage">이미지 회전하기</string>
+    <string name="button_made_by_code">코드로 만든 버튼</string>
 </resources>

@@ -9,6 +9,8 @@ import android.widget.ImageView
 import kr.hs.emirim.ham.myandlab.ch04widget.BasicWidgetActivity
 import kr.hs.emirim.ham.myandlab.ch04widget.CalActivity
 import kr.hs.emirim.ham.myandlab.ch04widget.LovelyPetActivity
+import kr.hs.emirim.ham.myandlab.ch04widget.RotateImageActivity
+import kr.hs.emirim.ham.myandlab.ch05layout.NoXmlActivity
 
 class MainActivity : AppCompatActivity(), View.OnClickListener {
 
@@ -21,6 +23,8 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
         findViewById<Button>(R.id.button3).setOnClickListener(this)
         findViewById<Button>(R.id.button4).setOnClickListener(this)
         findViewById<Button>(R.id.button5).setOnClickListener(this)
+        findViewById<Button>(R.id.button6).setOnClickListener(this)
+        findViewById<Button>(R.id.button7).setOnClickListener(this)
     }
 
     override fun onClick(v: View) {
@@ -31,6 +35,8 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
             R.id.button3 -> intent = Intent(this, CalActivity::class.java)
             R.id.button4 -> intent = Intent(this, BasicWidgetActivity::class.java)
             R.id.button5 -> intent = Intent(this, LovelyPetActivity::class.java)
+            R.id.button6 -> intent = Intent(this, RotateImageActivity::class.java)
+            R.id.button7 -> intent = Intent(this, NoXmlActivity::class.java)
             else -> return
         }
         startActivity(intent)
